@@ -26,11 +26,13 @@ RUN apt-get install -yy --no-install-recommends \
 	pkg-config \
 	asciidoctor \
 	doxygen \
+	net-tools \
 	mscgen \
 	graphviz \
 	python-pip \
 	xsltproc \
 	iproute2 \
+	curl \
 	ccache \
 	crossbuild-essential-arm64 \
 	pkg-config-aarch64-linux-gnu \
@@ -66,7 +68,9 @@ RUN apt-get install -yy --no-install-recommends \
 	libconfig-dev:armhf \
 	libconfig-dev:arm64 \
 	libconfig-dev:powerpc \
+	kmod \
 	clang \
-	build-essential
+	build-essential \
+	sudo
 
 RUN pip install coverage
